@@ -1,0 +1,22 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+    <br>
+        <p>Набор: {{ product.kit }}</p>
+        <p>Объем: {{ product.capacity }}</p>
+        <p>Тип памяти: {{ product.type }}</p>
+        <p>ECC: {{ product.ecc }}</p>
+        <p>Частота: {{ product.frequency }}</p>
+    <br>
+        <p>PC-индекс: {{ product.pc_index }}</p>
+        <p>CAS Latency: {{ product.cas_latency }}</p>
+        <p>Тайминги: {{ product.timings }}</p>
+        <p>Напряжение питания: {{ product.supply_voltage }}</p>
+        <p>Профили XMP: {{ product.xmp_profile }}</p>
+        <p>Профили AMP: {{ product.amp_profile }}</p>
+    <br>
+        <p>Охлаждение: {{ product.cooling }}</p>
+        <p>Низкопрофильный модуль: {{ product.low_module }}</p>
+        <p>Подсветка элементов платы: {{ product.illumination }}</p>
+        <p>Цвет: {{ product.color }}</p>
+</main>
+

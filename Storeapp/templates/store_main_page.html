@@ -1,0 +1,180 @@
+{% load static %}
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link type="text/css" href="{% static 'scss/main_css.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+{% load i18n %}
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__container _container">
+            <div class="header__body">
+                <div class="header__main">
+                    <a href="/" class="header__logo">@TechStore</a>
+                    <div class="header__menu menu">
+                        <nav class="menu__body">
+                            <ul data-spollers="768,max" class="menu__list">
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">{% trans "Ноутбуки" %}</a>
+                                    <button data-spoller type="button" class="menu__arrow fas fa-chevron-down"></button>
+                                    <ul class="menu__sub-list">
+                                        {% for product in products %}
+                                        <li class="menu__sub-item">
+                                            <a href="{{ product.get_absolute_url }}" class="menu__sub-link">{{ product.img.url }}</a>
+                                            <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+                                            <h5>{{ product.price }} руб.</h5>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">{% trans "Смартфоны" %}</a>
+                                    <button data-spoller type="button" class="menu__arrow fas fa-chevron-down"></button>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Продукт смартфон 1</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Продукт смартфон 2</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Продукт смартфон 3</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Продукт смартфон 4</a>
+                                        </li>
+                                        <li class="menu__sub-item">
+                                            <a href="" class="menu__sub-link">Продукт смартфон 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">{% trans "Комплектующие" %}</a>
+                                    <button data-spoller type="button" class="menu__arrow fas fa-chevron-down"></button>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-item">
+                                         {% for category in categories %}
+                                             <a href="{{ category.url }}" class="menu__sub-link">{{ category.name }} ({{ category.count }})</a>
+                                         {% endfor %}
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <div class="search-form">
+                        <button type="button" class="search-form__icon fas fa-search"></button>
+                        <form action="#" class="search-form__item">
+                            <button type="submit" class="search-form button fas fa-search"></button>
+                            <label>
+                                <input autocomplete="off" type="text" name="form[]" data-value="{% trans "Найти игровой ноутбук" %}" class="search-form__input">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="header__actions actions-header">
+                    <a href="" class="actions-header__item actions-header__item_favorites far fa-heart"></a>
+                    <div class="actions-header__item cart-header">
+                        <a href="" class="cart-header__icon fas fa-cart-arrow-down"></a>
+                        <div class="cart-header__body">
+                            <ul class="cart-header__list cart-list"></ul>
+                        </div>
+                    </div>
+                    <a href="" class="actions-header__item actions-header__item_user _ibg">
+                        <img src="/media/web_media/tab_icons/душа_пепла_2к.jpg" alt="Тест аватар">
+                    </a>
+                </div>
+                <button type="button" class="icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+{% block content %}{% endblock %}
+<footer class="footer">
+    <div class="footer__container _container">
+        <div class="footer__body">
+            <div class="footer__main">
+                <a href="/" class="footer__logo _footer-title">@TechStore</a>
+                <div class="footer__text">
+                    {% trans "Магазин компьтерных комлектующих по всему миру с 2020 года. На нашем сайте продается более 1000 брендовых товаров." %}
+                </div>
+                <div class="footer__contacts contacts-footer">
+                    <a href="" class="contacts-footer__item fas fa-map-marker-alt">{% trans "Минск, Беларусь" %}</a>
+                    <a href="tel:+375293388871" class="contacts-footer__item fas fa-mobile">+375-29-3388871</a>
+                    <a href="https://www.techstore.com" target="_blank" class="contacts-footer__item">www.techstore.com</a>
+                </div>
+            </div>
+            <div data-spollers="768,max" class="footer__menu menu-footer">
+                <div class="menu-footer__column">
+                    <button type="button" data-spoller class="menu-footer__title _footer-title style fas fa-chevron-down">{% trans "Меню" %}</button>
+                    <ul class="menu-footer__list">
+                        <li><a href="" class="menu-footer__link">{% trans "Каталог" %}</a></li>
+                        <li><a href="" class="menu-footer__link">{% trans "Последние поступления" %}</a></li>
+                        <li><a href="" class="menu-footer__link">{% trans "Манифест" %}</a></li>
+                        <li><a href="" class="menu-footer__link">{% trans "О нас" %}</a></li>
+                        <li><a href="" class="menu-footer__link">{% trans "Политика конфиденциальности" %}</a></li>
+                    </ul>
+                </div>
+                <div class="menu-footer__column">
+                    <button type="button" data-spoller class="menu-footer__title _footer-title style fas fa-chevron-down">{% trans "Профиль" %}</button>
+                    <ul class="menu-footer__list">
+                        <li><a href="" class="menu-footer__link">{% trans "Мой профиль" %}</a></li>
+                        <li><a href="" class="menu-footer__link">{% trans "Верификация" %}</a></li>
+                        <li><a href="" class="menu-footer__link">{% trans "Моя корзина" %}</a></li>
+                        <li><a href="" class="menu-footer__link">{% trans "Мой каталог" %}</a></li>
+                    </ul>
+                </div>
+                <div class="menu-footer__column">
+                    <button type="button" data-spoller class="menu-footer__title _footer-title style fas fa-chevron-down">{% trans "Обновления" %}</button>
+                    <ul class="menu-footer__list">
+                        <li><a href="" class="menu-footer__link">Facebook</a></li>
+                        <li><a href="" class="menu-footer__link">Instagram</a></li>
+                        <li><a href="" class="menu-footer__link">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__subscribe subscribe">
+                <div class="subscribe__title _footer-title">{% trans "Подписаться на рассылку" %}</div>
+                <form data-message="subscribe" data-test action="#" class="subscribe__form">
+                    <label>
+                        <input autocomplete="off" type="text" name="form[]" data-error="{% trans "Ошибка, введите корректный email" %}" data-value="{% trans "Введите свой email" %}" class="input _req _email">
+                    </label>
+                    <button type="submit" class="subscribe__button fas fa-location-arrow"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="popup popup_subscribe-message">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close"></div>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/384785ee12.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="{% static 'js/lightgallery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/sliders.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/functions.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/forms.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/dynamic_adaptive.js' %}"></script>
+</div>
+</body>
+</html>

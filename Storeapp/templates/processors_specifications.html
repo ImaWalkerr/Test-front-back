@@ -1,0 +1,25 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Дата выхода на рынок: {{ product.market_launch_date }}</p>
+        <p>Модельный ряд: {{ product.the_lineup }}</p>
+        <p>Тип поставки: {{ product.delivery_type }}</p>
+        <p>Охлаждение в комплекте: {{ product.cooling_included }}</p>
+        <p>Кодовое название кристалла {{ product.crystal_code_name }}</p>
+        <p>Сокет: {{ product.socket }}</p>
+        <p>Количество ядер: {{ product.number_of_cores }}</p>
+        <p>Максимальное количество потоков: {{ product.maximum_number_of_threads }}</p>
+        <p>Базовая тактовая частота: {{ product.base_clock_frequency }}</p>
+        <p>Максимальная частота: {{ product.max_frequency }}</p>
+        <p>Кэш L2: {{ product.cash_l2 }}</p>
+        <p>Кэш L3: {{ product.cash_l3 }}</p>
+    <br>
+        <p>Поддержка памяти: {{ product.memory_support }}</p>
+        <p>Количество каналов памяти: {{ product.number_of_memory_channels }}</p>
+        <p>Макс. частота памяти: {{ product.max_memory_frequency }}</p>
+        <p>Встроенный контроллер PCI Express: {{ product.gpu_express_controller }}</p>
+        <p>Встроенная графика: {{ product.integrated_graphics }}</p>
+        <p>Расчетная тепловая мощность (TDP): {{ product.tdp }}</p>
+        <p>Техпроцесс: {{ product.technical_process }}</p>
+        <p>Многопоточность ядра: {{ product.kernel_multi_threading}}</p>
+</main>
+

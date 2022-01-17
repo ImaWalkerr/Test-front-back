@@ -1,0 +1,36 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Назначение: {{ product.appointment }}</p>
+        <p>Мощность: {{ product.power }}</p>
+        <p>Стандарт блока питания: {{ product.power_supply_standard }}</p>
+        <p>Диапазон входного напряжения сети: {{ product.mains_input_voltage_range }}</p>
+        <p>Количество отдельных линий +12V: {{ product.number_of_separate_lines_12v }}</p>
+        <p>Макс. ток по линии +12V: {{ product.max_line_current_12v }}</p>
+        <p>Комбинированная нагрузка по +12V: {{ product.combined_load_12v }}</p>
+        <p>Коррекция фактора мощности (PFC): {{ product.power_factor_correction }}</p>
+        <p>КПД: {{ product.efficiency }}</p>
+        <p>Сертификат 80 PLUS: {{ product.certificate_80_plus }}</p>
+        <p>Размер вентилятора блока питания: {{ product.power_supply_fan_size }}</p>
+    <br>
+        <p>Количество вентиляторов: {{ product.total_fans }}</p>
+        <p>Подсветка вентилятора: {{ product.fan_illumination}}</p>
+        <p>Подсветка корпуса: {{ product.case_illumination }}</p>
+        <p>Длина кабеля питания: {{ product.power_cable_length }}</p>
+        <p>Модульное подключение кабелей питания: {{ product.modular_power_cable_connection }}</p>
+        <p>Питание материнской платы: {{ product.motherboard_power}}</p>
+    <br>
+        <p>CPU 4 pin: {{ product.cpu_4_pin }}</p>
+        <p>CPU 8 pin: {{ product.cpu_8_pin }}</p>
+        <p>FDD 4 pin: {{ product.fdd_4_pin }}</p>
+        <p>IDE 4 pin: {{ product.ide_4_pin }}</p>
+        <p>SATA: {{ product.sata }}</p>
+        <p>PCIe 6 pin: {{ product.pcle_6_pin }}</p>
+        <p>PCIe 8 pin: {{ product.pcle_8_pin }}</p>
+        <p>USB Power: {{ product.usb_power }}</p>
+    <br>
+        <p>Высота: {{ product.height }}</p>
+        <p>Ширина: {{ product.width }}</p>
+        <p>Глубина: {{ product.depth }}</p>
+        <p>Вес: {{ product.weight }}</p>
+</main>
+

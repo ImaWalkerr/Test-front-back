@@ -1,0 +1,49 @@
+{% extends 'store_main_page.html' %}
+
+{% block content %}
+<main class="base-page">
+    <nav aria-label="breadcrumb" style="margin-top: 100px">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'main_page' %}">Главная</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">{{ product.category.name }}</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                <a href="">Data</a>
+            </li>
+        </ol>
+    </nav>
+    {{ product.title }}
+    <img src="{{ product.image.url }}" alt="">
+    <p>ЦЕНА: {{ product.price }}</p>
+    <p>Описание: {{ product.description }}</p>
+    <p>Характеристики:</p>
+
+    {% if product.category.slug == 'notebooks' %}
+        {% include 'notebook_specifications.html' %}
+    {% elif product.category.slug == 'smartphones'%}
+        {% include 'smartphones_specifications.html' %}
+    {% elif product.category.slug == 'videocards'%}
+        {% include 'videocards_specifications.html' %}
+    {% elif product.category.slug == 'processors'%}
+        {% include 'processors_specifications.html' %}
+    {% elif product.category.slug == 'motherboards'%}
+        {% include 'motherboards_specifications.html' %}
+    {% elif product.category.slug == 'ram'%}
+        {% include 'ram_specifications.html' %}
+    {% elif product.category.slug == 'coolers'%}
+        {% include 'coolers_specifications.html' %}
+    {% elif product.category.slug == 'ssd'%}
+        {% include 'ssd_specifications.html' %}
+    {% elif product.category.slug == 'hdd'%}
+        {% include 'hdd_specifications.html' %}
+    {% elif product.category.slug == 'cases'%}
+        {% include 'cases_specifications.html' %}
+    {% elif product.category.slug == 'powersupply'%}
+        {% include 'powersupply_specifications.html' %}
+    {% endif %}
+
+</main>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'store_main_page.html' %}
+
+{% block content %}
+    <main class="base-page">
+        <div class="drop all-posts" style="margin-top: 100px; padding: 25px;">
+            <h3 class="Name">Посты</h3>
+            {% for post in posts %}
+                {% if forloop.last %}
+                <div class="card posts last-post" data-post-id="{{ post.id }}"></div>
+                {% else %}
+                <div class="card posts">
+                {% endif %}
+                    <div class="post__body">
+                        <h5 class="post__main-title">{{ post.main_title }}</h5>
+                        <p class="post__title">{{ post.title }}</p>
+                        <a href="#" class="post__link">Читать пост</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% if posts.count >= 2 %}
+            <button class="btn_white load-more" id="load-more">Загрузить еще</button>
+        {%  endif %}
+    </main>
+{% endblock %}
+
+<script>
+    $('#load-more').on('click', function () {
+        let lastPostId = $('.last-post').attr('data-post-id')
+        let data = {
+            lastPostId: lastPostId
+        }
+        $('.posts').removeClass('last-post')
+        $('.posts').removeAttr('last-post-id')
+        $.ajax({
+            method: "GET",
+            dataType: "json",
+            data: data,
+            url: '{% url "load_more_posts" %}',
+            success: function (data) {
+                let result = data['data']
+                if (!result) {
+                    $('.load-more').css('display', 'none')
+                } else {
+                    $.each(result, function ( key, obj ) {
+                        if(obj['last-post']) {
+                            $('.all-posts').append(
+                                '<div class="card posts last-post" data-post-id="' + obj['id'] + '">' +
+                                    '<div class="post__body">' +
+                                        '<h5 class="post__main-title">' + obj['main_title'] + '</h5>' +
+                                        '<p class="post__title">' + obj['title'] + '</p>' +
+                                        '<a href="#" class="post__link">Читать пост</a>' +
+                                    '</div>' +
+                                '</div>'
+                            )
+                        } else {
+                            $('.all-posts').append(
+                                '<div class="card posts">' +
+                                    '<div class="post__body">' +
+                                        '<h5 class="post__main-title">' + obj['main_title'] + '</h5>' +
+                                        '<p class="post__title">' + obj['title'] + '</p>' +
+                                        '<a href="#" class="post__link">Читать пост</a>' +
+                                    '</div>' +
+                                '</div>'
+                            )
+                        }
+                    })
+                }
+            }
+        })
+    })
+</script>

@@ -1,0 +1,25 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Дата выхода на рынок: {{ product.market_launch_date }}</p>
+        <p>Объём: {{ product.capacity }}</p>
+        <p>Форм-фактор: {{ product.form_factor }}</p>
+        <p>Интерфейс: {{ product.interface }}</p>
+        <p>Тип микросхем Flash: {{ product.chip_type_flash }}</p>
+        <p>Контроллер: {{ product.controller }}</p>
+        <p>Размеры устройств M.2: {{ product.m2_device_dimensions }}</p>
+        <p>Ресурс записи: {{ product.recording_resource }}</p>
+        <p>Буфер: {{ product.buffer }}</p>
+        <p>Аппаратное шифрование: {{ product.hardware_encryption }}</p>
+    <br>
+        <p>Скорость последовательного чтения: {{ product.sequential_read_speed }}</p>
+        <p>Скорость последовательной записи: {{ product.sequential_write_speed }}</p>
+        <p>Средняя скорость случайного чтения: {{ product.average_random_read_speed }}</p>
+        <p>Средняя скорость случайной записи: {{ product.average_random_write_speed }}</p>
+        <p>Энергопотребление (чтение/запись): {{ product.power_consumption_1 }}</p>
+        <p>Энергопотребление (ожидание): {{ product.power_consumption_2 }}</p>
+        <p>Время наработки на отказ (МТBF): {{ product.time_between_failures }}</p>
+        <p>Охлаждение: {{ product.cooling}}</p>
+        <p>Толщина: {{ product.thickness }}</p>
+        <p>Адаптер 3.5: {{ product.adapter }}</p>
+</main>
+

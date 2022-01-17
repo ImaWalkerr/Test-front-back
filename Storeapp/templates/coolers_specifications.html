@@ -1,0 +1,30 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+    <br>
+        <p>Тип: {{ product.type }}</p>
+        <p>Тип охлаждения: {{ product.cooling_type }}</p>
+        <p>Цвет: {{ product.color }}</p>
+        <p>Сокет: {{ product.socket }}</p>
+        <p>Рассеиваемая мощность: {{ product.power_dissipation }}</p>
+        <p>Материал радиатора: {{ product.radiator_metal }}</p>
+        <p>Тепловые трубки: {{ product.heat_pipes }}</p>
+        <p>Всего тепловых трубок: {{ product.total_heat_pipes }}</p>
+        <p>Испарительные камеры: {{ product.evaporation }}</p>
+        <p>Диаметр вентилятора: {{ product.fan_diameter }}</p>
+        <p>Количество вентиляторов: {{ product.total_fans }}</p>
+    <br>
+        <p>Подшипник: {{ product.bearing }}</p>
+        <p>Максимальная скорость вращения: {{ product.max_rotation_speed }}</p>
+        <p>Контроль скорости вращения (PWM): {{ product.rotation_speed_control  }}</p>
+        <p>Термоконтроль: {{ product.thermal_control }}</p>
+        <p>Тип подключения: {{ product.connection_type }}</p>
+        <p>LED-подсветка: {{ product.led }}</p>
+        <p>Виброизоляция: {{ product.vibration_isolation}}</p>
+        <p>Уровень шума: {{ product.noise_lvl }}</p>
+    <br>
+        <p>Ширина: {{ product.width }}</p>
+        <p>Глубина: {{ product.depth }}</p>
+        <p>Высота: {{ product.height }}</p>
+        <p>Вес: {{ product.weight }}</p>
+</main>
+

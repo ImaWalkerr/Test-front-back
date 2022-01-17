@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-06 20:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\Storeapp\templates\main_page.html:16
+msgid "Все работает"
+msgstr "All work"
+
+#: .\Storeapp\templates\store_main_page.html:26
+msgid "Ноутбуки"
+msgstr "Notebooks"
+
+#: .\Storeapp\templates\store_main_page.html:47
+msgid "Смартфоны"
+msgstr "Smartphones"
+
+#: .\Storeapp\templates\store_main_page.html:68
+msgid "Комплектующие"
+msgstr "Accessories"
+
+#: .\Storeapp\templates\store_main_page.html:98
+msgid "Найти игровой ноутбук"
+msgstr "Find a gaming laptop"
+
+#: .\Storeapp\templates\store_main_page.html:469
+msgid "Магазин компьтерных комлектующих по всему миру с 2020 года. На нашем сайте продается более 1000 брендовых товаров."
+msgstr "Store computer accessories worldwide since 2020. More than 1000 branded products are sold on our site."
+
+#: .\Storeapp\templates\store_main_page.html:472
+msgid "Минск, Беларусь"
+msgstr ""
+
+#: .\Storeapp\templates\store_main_page.html:479
+msgid "Меню"
+msgstr "Minsk, Belarus"
+
+#: .\Storeapp\templates\store_main_page.html:481
+msgid "Каталог"
+msgstr "Catalog"
+
+#: .\Storeapp\templates\store_main_page.html:482
+msgid "Последние поступления"
+msgstr "Latest arrivals"
+
+#: .\Storeapp\templates\store_main_page.html:483
+msgid "Манифест"
+msgstr "Manifesto"
+
+#: .\Storeapp\templates\store_main_page.html:484
+msgid "О нас"
+msgstr "About us"
+
+#: .\Storeapp\templates\store_main_page.html:485
+msgid "Политика конфиденциальности"
+msgstr "Privacy Policy"
+
+#: .\Storeapp\templates\store_main_page.html:489
+msgid "Профиль"
+msgstr "Profile"
+
+#: .\Storeapp\templates\store_main_page.html:491
+msgid "Мой профиль"
+msgstr "My profile"
+
+#: .\Storeapp\templates\store_main_page.html:492
+msgid "Верификация"
+msgstr "Verification"
+
+#: .\Storeapp\templates\store_main_page.html:493
+msgid "Моя корзина"
+msgstr "My cart"
+
+#: .\Storeapp\templates\store_main_page.html:494
+msgid "Мой каталог"
+msgstr "My catalog"
+
+#: .\Storeapp\templates\store_main_page.html:498
+msgid "Обновления"
+msgstr "Updates"
+
+#: .\Storeapp\templates\store_main_page.html:507
+msgid "Подписаться на рассылку"
+msgstr "Subscribe to the newsletter"
+
+#: .\Storeapp\templates\store_main_page.html:510
+msgid "Ошибка, введите корректный email"
+msgstr ""
+
+#: .\Storeapp\templates\store_main_page.html:510
+msgid "Введите свой email"
+msgstr "Error, please enter correct email"
+
+#: .\Storeapp\views.py:11
+msgid "Главная страница"
+msgstr "Main page"
+
+#: .\Storeapp\views.py:18
+msgid "@TechStore"
+msgstr "@TechStore"

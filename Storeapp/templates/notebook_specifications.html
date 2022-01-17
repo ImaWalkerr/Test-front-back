@@ -1,0 +1,99 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Дата выхода на рынок: {{ product.date }}</p>
+        <p>Продуктовая линейка: {{ product.product_line }}</p>
+        <p>Тип ноутбука: {{ product.type }}</p>
+        <p>Платформа(кодовое название): {{ product.platform_codename }}</p>
+        <p>Модель процессора: {{ product.processor_model }}</p>
+        <p>Количество ядер процессора: {{ product.number_of_cores_cpu }}</p>
+        <p>Количество потоков процессора: {{ product.number_of_threads_cpu }}</p>
+        <p>Тактовая частота процессора: {{ product.clock_frequency_cpu }}</p>
+        <p>Турбо частота процессора: {{ product.turbo_frequency_cpu }}</p>
+        <p>Энергопотребление процессора: {{ product.cpu_power_consumption }}</p>
+        <p>Встроенная графика: {{ product.cpu_graphics }}</p>
+    <br>
+        <p>Материал корпуса: {{ product.case_material }}</p>
+        <p>Цвет корпуса: {{ product.case_color }}</p>
+        <p>Материал крышки: {{ product.cover_material }}</p>
+        <p>Цвет крышки: {{ product.cover_color }}</p>
+        <p>Подсветка корпуса: {{ product.case_backlight }}</p>
+        <p>Защищенный корпус: {{ product.protected_case }}</p>
+        <p>Длина: {{ product.length }}</p>
+        <p>Ширина: {{ product.width}}</p>
+        <p>Толщина: {{ product.thickness }}</p>
+        <p>Вес: {{ product.height }}</p>
+    <br>
+        <p>Диагональ экрана: {{ product.screen_diagonal }}</p>
+        <p>Разрешение экрана: {{ product.screen_resolution }}</p>
+        <p>Частота матрицы: {{ product.matrix_frequency }}</p>
+        <p>Технология экрана: {{ product.screen_technology }}</p>
+        <p>Поверхность экрана: {{ product.screen_surface }}</p>
+        <p>Поддержка активного пера: {{ product.screen_support }}</p>
+        <p>Защита от царапин: {{ product.screen_protection }}</p>
+        <p>Характеристики дисплея: {{ product.screen_info }}</p>
+    <br>
+        <p>Тип оперативной памяти: {{ product.ram_type }}</p>
+        <p>Частота оперативной памяти: {{ product.ram_frequency  }}</p>
+        <p>Объём оперативной памяти: {{ product.ram_memory }}</p>
+        <p>Максимальный объём оперативной памяти: {{ product.max_ram_memory }}</p>
+        <p>Всего слотов памяти: {{ product.memory_slots }}</p>
+        <p>Свободных слотов памяти: {{ product.free_memory_slots }}</p>
+    <br>
+        <p>Конфигурация накопителя: {{ product.configuration_drive_type }}</p>
+        <p>Тип накопителя: {{ product.drive_type }}</p>
+        <p>Ёмкость накопителя: {{ product.drive_capacity }}</p>
+        <p>Количество слотов для SSD: {{ product.number_of_ssd_slots }}</p>
+        <p>Интерфейс установленного SSD: {{ product.interface_ssd }}</p>
+        <p>Оптический привод (ODD): {{ product.optical_drive_unit }}</p>
+        <p>Карты памяти: {{ product.memory_cards }}</p>
+    <br>
+        <p>Дискретная видеокарта: {{ product.discrete_graphics }}</p>
+        <p>Модель видеокарты: {{ product.graphics_card_model }}</p>
+        <p>Локальная видеопамять: {{ product.local_video_memory }}</p>
+        <p>Характеристики видеокарты: {{ product.graphics_card_feature }}</p>
+        <p>Дополнительные характеристики видеокарты: {{ product.additional_graphics_card_feature }}</p>
+    <br>
+        <p>Камера: {{ product.camera }}</p>
+        <p>Встроенный микрофон: {{ product.built_in_microphone }}</p>
+        <p>Встроенные динамики: {{ product.built_in_speakers }}</p>
+        <p>Цифровое поле (Numpad)': {{ product.numpad }}</p>
+        <p>Подсветка клавиатуры: {{ product.backlit_keyboard }}</p>
+        <p>Заводская «кириллица» на клавишах: {{ product.factory_cyrillic_on_keys }}</p>
+        <p>Управление курсором: {{ product.cursor_control }}</p>
+        <p>Мультимедийная сенсорная панель: {{ product.multimedia_touchpad }}</p>
+        <p>Функции защиты приватности: {{ product.privacy_protection_features }}</p>
+    <br>
+        <p>NFC: {{ product.nfs }}</p>
+        <p>Bluetooth: {{ product.bluetooth }}</p>
+        <p>LAN: {{ product.lan }}</p>
+        <p>Wi-Fi: {{ product.wifi }}</p>
+        <p>Сотовая связь: {{ product.mobile }}</p>
+        <p>USB 2.0: {{ product.usb_2 }}</p>
+        <p>Всего USB 2.0: {{ product.total_usb_2 }}</p>
+        <p>Всего USB Type A: {{ product.total_usb_type_a }}</p>
+        <p>USB 3.2 Gen1 Type-A (5 Гбит/с): {{ product.usb_3_2_gen1_type_a_5gbit }}</p>
+        <p>Всего USB 3.2 Gen1 Type-A (5 Гбит/с): {{ product.total_usb_3_2_gen1_type_a_5gbit }}</p>
+        <p>USB 3.2 Gen1 Type-A (10 Гбит/с): {{ product.usb_3_2_gen1_type_a_10gbit }}</p>
+        <p>Всего USB Type C: {{ product.total_usb_type_c }}</p>
+        <p>USB 3.2 Gen1 Type-C (5 Гбит/с): {{ product.usb_3_2_gen1_type_c_5gbit }}</p>
+        <p>Всего USB 3.2 Gen1 Type-C (5 Гбит/с): {{ product.total_usb_3_2_gen1_type_c_5gbit }}</p>
+        <p>USB 3.2 Gen2 Type-C (10 Гбит/с): {{ usb_3_2_gen2_type_c_10gbit }}</p>
+        <p>Всего USB 3.2 Gen2 Type-C (10 Гбит/с): {{ product.total_usb_3_2_gen2_type_c_10gbit }}</p>
+        <p>USB 3.2 Gen 2x2 (20 Гбит/с): {{ product.usb_3_2_gen2x2_20gbit }}</p>
+        <p>Всего USB 3.2 Gen 2x2 (20 Гбит/с): {{ product.total_usb_3_2_gen2x2_20gbit }}</p>
+        <p>USB4 (до 40 Гбит/с): {{ product.usb_4 }}</p>
+        <p>Максимальная скорость передачи данных USB (до 40 Гбит/с): {{ product.max_usb_speed }}</p>
+        <p>Альтернативные режимы USB Type C: {{ product.alternative_modes_usb_type_c }}</p>
+        <p>VGA (RGB): {{ product.vga }}</p>
+        <p>HDMI: {{ product.hdmi }}</p>
+        <p>Mini display port: {{ product.mini_display_port }}</p>
+        <p>Аудио выходы(3.5мм jack): {{ product.audio_outputs }}</p>
+        <p>Количество ячеек аккумулятора: {{ product.battery_cells }}</p>
+        <p>Запас энергии: {{ product.energy_reserve }}</p>
+        <p>Зарядка ноутбука через USB Type C: {{ product.charge_via_usb_type_c }}</p>
+        <p>Адаптер питания USB Type C: {{ product.usb_c_power_adapter }}</p>
+    <br>
+        <p>Операционная система: {{ product.operation_system }}</p>
+        <p>Дополнительная комплектация: {{ product.additional_equipment }}</p>
+</main>
+

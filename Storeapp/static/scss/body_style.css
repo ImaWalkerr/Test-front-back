@@ -1,0 +1,22 @@
+/* Error: Missing argument $startSize.
+ *    ,--> body_style.scss
+ * 311|     @include adaptive-value("font-size")
+ *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *    '
+ *    ,--> mixins.scss
+ * 38 | @mixin adaptive-value($property, $startSize, $minSize, $type) {
+ *    |        ====================================================== declaration
+ *    '
+ *   body_style.scss 311:2  adaptive-value()
+ *   body_style.scss 311:2  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Missing argument $startSize.\a    \250c \2500 \2500 > body_style.scss\a 311\2502      @include adaptive-value("font-size")\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a    \2575 \a    \250c \2500 \2500 > mixins.scss\a 38 \2502  @mixin adaptive-value($property, $startSize, $minSize, $type) {\d\a    \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a    \2575 \a   body_style.scss 311:2  adaptive-value()\a   body_style.scss 311:2  root stylesheet';
+}

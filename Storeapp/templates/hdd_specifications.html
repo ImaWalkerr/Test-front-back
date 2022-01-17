@@ -1,0 +1,17 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Тип накопителя: {{ product.drive_type }}</p>
+        <p>Объём: {{ product.capacity }}</p>
+        <p>Форм-фактор: {{ product.form_factor }}</p>
+        <p>Интерфейс: {{ product.interface }}</p>
+        <p>Скорость вращения шпинделя: {{ product.spindle_speed }}</p>
+        <p>Буфер: {{ product.buffer }}</p>
+        <p>Уровень шума при чтении/записи: {{ product.read_write_noise }}</p>
+        <p>Уровень шума в режиме ожидания: {{ product.standby_noise }}</p>
+        <p>Ударная нагрузка при работе: {{ product.shock_during_operation }}</p>
+        <p>Ударная нагрузка в нерабочем состоянии: {{ product.non_operation_shock }}</p>
+        <p>Энергопотребление (чтение/запись): {{ product.power_consumption_1 }}</p>
+        <p>Энергопотребление (ожидание): {{ product.power_consumption_2 }}</p>
+        <p>Толщина: {{ product.thickness }}</p>
+</main>
+

@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-06 20:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\Storeapp\templates\main_page.html:16
+msgid "Все работает"
+msgstr "Все работает"
+
+#: .\Storeapp\templates\store_main_page.html:26
+msgid "Ноутбуки"
+msgstr ""
+
+#: .\Storeapp\templates\store_main_page.html:47
+msgid "Смартфоны"
+msgstr "Ноутбуки"
+
+#: .\Storeapp\templates\store_main_page.html:68
+msgid "Комплектующие"
+msgstr "Комплектующие"
+
+#: .\Storeapp\templates\store_main_page.html:98
+msgid "Найти игровой ноутбук"
+msgstr "Найти игровой ноутбук"
+
+#: .\Storeapp\templates\store_main_page.html:469
+msgid "Магазин компьтерных комлектующих по всему миру с 2020 года. На нашем сайте продается более 1000 брендовых товаров."
+msgstr "Магазин компьтерных комлектующих по всему миру с 2020 года. На нашем сайте продается более 1000 брендовых товаров."
+
+#: .\Storeapp\templates\store_main_page.html:472
+msgid "Минск, Беларусь"
+msgstr "Минск, Беларусь"
+
+#: .\Storeapp\templates\store_main_page.html:479
+msgid "Меню"
+msgstr "Меню"
+
+#: .\Storeapp\templates\store_main_page.html:481
+msgid "Каталог"
+msgstr "Каталог"
+
+#: .\Storeapp\templates\store_main_page.html:482
+msgid "Последние поступления"
+msgstr "Последние поступления"
+
+#: .\Storeapp\templates\store_main_page.html:483
+msgid "Манифест"
+msgstr "Манифест"
+
+#: .\Storeapp\templates\store_main_page.html:484
+msgid "О нас"
+msgstr "О нас"
+
+#: .\Storeapp\templates\store_main_page.html:485
+msgid "Политика конфиденциальности"
+msgstr "Политика конфиденциальности"
+
+#: .\Storeapp\templates\store_main_page.html:489
+msgid "Профиль"
+msgstr "Профиль"
+
+#: .\Storeapp\templates\store_main_page.html:491
+msgid "Мой профиль"
+msgstr "Мой профиль"
+
+#: .\Storeapp\templates\store_main_page.html:492
+msgid "Верификация"
+msgstr "Верификация"
+
+#: .\Storeapp\templates\store_main_page.html:493
+msgid "Моя корзина"
+msgstr "Моя корзина"
+
+#: .\Storeapp\templates\store_main_page.html:494
+msgid "Мой каталог"
+msgstr "Мой каталог"
+
+#: .\Storeapp\templates\store_main_page.html:498
+msgid "Обновления"
+msgstr "Обновления"
+
+#: .\Storeapp\templates\store_main_page.html:507
+msgid "Подписаться на рассылку"
+msgstr "Подписаться на рассылку"
+
+#: .\Storeapp\templates\store_main_page.html:510
+msgid "Ошибка, введите корректный email"
+msgstr "Ошибка, введите корректный email"
+
+#: .\Storeapp\templates\store_main_page.html:510
+msgid "Введите свой email"
+msgstr "Введите свой email"
+
+#: .\Storeapp\views.py:11
+msgid "Главная страница"
+msgstr "Главная страница"
+
+#: .\Storeapp\views.py:18
+msgid "@TechStore"
+msgstr "@TechStore"

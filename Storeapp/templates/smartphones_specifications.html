@@ -1,0 +1,106 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Дата выхода на рынок: {{ product.date }}</p>
+        <p>Операционная система: {{ product.mobile_operation_system }}</p>
+        <p>Версия операционной системы: {{ product.ver_mobile_operation_system }}</p>
+        <p>Размер экрана: {{ product.screen_size }}</p>
+        <p>Разрешение экрана: {{ product.screen_resolution_mobile }}</p>
+        <p>Оперативная память: {{ product.ram_mobile }}</p>
+        <p>Флэш-память: {{ product.flash_memory }}</p>
+        <p>Встроенная камера: {{ product.built_in_camera }}</p>
+        <p>Количество основных камер: {{ product.num_of_main_cam }}</p>
+        <p>Количество точек матрицы: {{ product.num_of_matrix_points }}</p>
+        <p>Количество SIM-карт: {{ product.num_of_sim_cards }}</p>
+        <p>Формат SIM-карт: {{ product.sim_card_format }}</p>
+        <p>Максимальное разрешение видео: {{ product.max_video_resolution }}</p>
+        <p>Поддержка карт памяти: {{ product.memory_card_support }}</p>
+    <br>
+        <p>Платформа: {{ product.platform }}</p>
+        <p>Процессор: {{ product.cpu }}</p>
+        <p>Тактовая частота процессора: {{ product.cpu_clock_speed }}</p>
+        <p>Кол-во ядер: {{ product.num_of_cores }}</p>
+        <p>Микроархитектура процессора: {{ product.microarchitecture_cpu }}</p>
+        <p>Разрядность процессора: {{ product.cpu_size}}</p>
+        <p>Техпроцесс: {{ product.technical_process }}</p>
+        <p>Графический ускоритель: {{ product.graphics_accelerator }}</p>
+        <p>Частота ГПУ: {{ product.gpu_frequency }}</p>
+        <p>Конструкция корпуса: {{ product.body_design }}</p>
+        <p>Сменные панели: {{ product.replaceable_panels }}</p>
+        <p>Материал корпуса: {{ product.body_material }}</p>
+        <p>Материал задней крышки: {{ product.back_cover_material }}</p>
+        <p>Цвет корпуса: {{ product.body_color }}</p>
+        <p>Цвет фронтальной панели: {{ product.front_panel_color }}</p>
+        <p>Ударопрочный корпус: {{ product.shockproof_housing }}</p>
+        <p>Пыле- и влагозащита: {{ product.protection }}</p>
+        <p>Физическая QWERTY-клавиатура: {{ product.physical_qwerty_keyboard }}</p>
+        <p>Расположение фронтальной камеры: {{ product.front_camera_location }}</p>
+        <p>Расположение сканера отпечатка пальца: {{ product.fingerprint_scanner_location }}</p>
+        <p>Кнопка SOS: {{ product.button_sos }}</p>
+    <br>
+        <p>Длина: {{ product.length }}</p>
+        <p>Ширина: {{ product.width }}</p>
+        <p>Толщина: {{ product.thickness }}</p>
+        <p>Вес: {{ product.height }}</p>
+    <br>
+        <p>Технология экрана: {{ product.screen_technology }}</p>
+        <p>Кол-во цветов экрана: {{ product.num_of_screen_colors }}</p>
+        <p>Разрешающая способность экрана: {{ product.screen_res }}</p>
+        <p>Соотношение сторон: {{ product.aspect_ratio }}</p>
+        <p>Частота обновления экрана: {{ product.refresh_rate }}</p>
+        <p>Сенсорный экран: {{ product.touch_screen }}</p>
+        <p>Защита от царапин: {{ product.scratch_protection }}</p>
+        <p>Технология дополнительного экрана: {{ product.sec_screen_technology }}</p>
+    <br>
+        <p>Характеристики камеры: {{ product.camera_specifications }}</p>
+        <p>Дополнительные модули камеры: {{ product.additional_camera_modules }}</p>
+        <p>Встроенная вспышка: {{ product.built_in_flash_main_camera }}</p>
+        <p>Автоматическая фокусировка: {{ product.auto_focus_main_camera }}</p>
+        <p>Оптическая стабилизация: {{ product.optical_stabilization_main_camera }}</p>
+        <p>Диафрагма: {{ product.diaphragm_main_camera }}</p>
+        <p>Максимальное во-во кадров в секунду: {{ product.max_frames_per_second_main_camera }}</p>
+        <p>Фронтальная камера: {{ product.front_camera }}</p>
+        <p>Двойная камера: {{ product.dual_camera }}</p>
+        <p>Автоматическая фокусировка: {{ product.auto_focus_front_camera }}</p>
+        <p>Оптическая стабилизация: {{ product.optical_stabilization_front_camera }}</p>
+        <p>Встроенная вспышка: {{ product.built_in_flash_front_camera }}</p>
+        <p>Диафрагма: {{ product.diaphragm_front_camera }}</p>
+        <p>Максимальное во-во кадров в секунду: {{ product.max_frames_per_second_front_camera }}</p>
+    <br>
+        <p>Стереодинамики: {{ product.stereo_speakers }}</p>
+        <p>Сканер отпечатка пальца: {{ product.fingerprint_scanner }}</p>
+        <p>Сканер карты лица или радужки глаза: {{ product.face_or_iris_map_scanner }}</p>
+        <p>Разблокировка по лицу: {{ product.face_unlock }}</p>
+        <p>Регистрация силы нажатий: {{ product.registering_the_force_of_pressing }}</p>
+        <p>Монитор сердечного ритма: {{ product.heart_rate_monitor }}</p>
+        <p>Работа в перчатках: {{ product.work_with_gloves }}</p>
+        <p>ИК-передатчик: {{ product.ir_transmitter }}</p>
+        <p>FM-приемник: {{ product.fm_receiver }}</p>
+        <p>Беспроводная зарядка: {{ product.wireless_charging }}</p>
+        <p>Обратная беспроводная зарядка: {{ product.reverse_wireless_charging }}</p>
+        <p>Быстрая зарядка: {{ product.fast_charging }}</p>
+        <p>Акселерометр: {{ product.accelerometer }}</p>
+        <p>Гироскоп: {{ product.gyroscope }}</p>
+        <p>Датчик освещенности: {{ product.light_sensor }}</p>
+        <p>Барометр: {{ product.barometer }}</p>
+    <br>
+        <p>ANT+: {{ product.ant }}</p>
+        <p>GPS: {{ product.gps }}</p>
+        <p>GLONASS: {{ product.glonass }}</p>
+        <p>Beidou: {{ product.beidou }}</p>
+        <p>Передача данных EDGE: {{ product.edge }}</p>
+        <p>HSPA: {{ product.hspa }}</p>
+        <p>HSPA+: {{ product.hspa_plus }}</p>
+        <p>LTE: {{ product.lte }}</p>
+        <p>5G: {{ product.five_g }}</p>
+        <p>Bluetooth: {{ product.bluetooth }}</p>
+        <p>Аудиовыход: {{ product.audio_output }}</p>
+        <p>Wi-Fi: {{ product.wifi }}</p>
+        <p>Разъём подключения: {{ product.microusb_connector }}</p>
+        <p>HDMI-выход: {{ product.hdmi }}</p>
+        <p>NFS: {{ product.nfs }}</p>
+    <br>
+        <p>Тип аккумулятора: {{ product.battery_type }}</p>
+        <p>Ёмкость аккумулятора: {{ product.battery_capacity }}</p>
+        <p>Несъёмный аккумулятор: {{ product.non_removable }}</p>
+        <p>Комплект поставки: {{ product.contents_of_delivery }}</p>
+</main>

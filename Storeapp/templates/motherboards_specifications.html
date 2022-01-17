@@ -1,0 +1,82 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Дата выхода на рынок: {{ product.market_launch_date }}</p>
+        <p>Поддержка процессоров: {{ product.processor_support }}</p>
+        <p>Сокет: {{ product.socket }}</p>
+        <p>Чипсет: {{ product.chipset }}</p>
+        <p>Форм-фактор: {{ product.form_factor }}</p>
+        <p>Подсветка: {{ product.backlight }}</p>
+        <p>Тип памяти: {{ product.memory_type }}</p>
+        <p>Количество слотов памяти: {{ product.number_of_memory_slots }}</p>
+        <p>Максимальный объём памяти: {{ product.max_memory }}</p>
+        <p>Режим памяти: {{ product.memory_mode }}</p>
+        <p>Максимальная частота памяти: {{ product.max_memory_frequency }}</p>
+    <br>
+        <p>Версия PCI Express: {{ product.ver_pcl_express }}</p>
+        <p>PCI Express x16: {{ product.pcl_express_x16 }}</p>
+        <p>Количество PCI Express x16: {{ product.total_pcl_express_x16 }}</p>
+        <p>PCI Express 2.0 x16: {{ product.pcl_express_2_x16 }}</p>
+        <p>Количество PCI Express 2.0 x16: {{ product.total_pcl_express_2_x16 }}</p>
+        <p>PCI Express x1: {{ product.pcl_express_x1 }}</p>
+        <p>Количество PCI Express x1: {{ product.total_pcl_express_x1 }}</p>
+        <p>Из них PCI Express 2.0 x1: {{ product.pcl_express_2_x1}}</p>
+        <p>Количество PCI Express 2.0 x1: {{ product.total_pcl_express_2_x1 }}</p>
+        <p>Из них PCI Express x4: {{ product.pcl_express_x4 }}</p>
+        <p>Количество PCI Express 2.0 x4: {{ product.total_pcl_express_2_x4 }}</p>
+        <p>Из них PCI Express x8: {{ product.pcl_express_x8 }}</p>
+        <p>Количество PCI Express 2.0 x8: {{ product.total_pcl_express_2_x8 }}</p>
+    <br>
+        <p>PCI: {{ product.pcl }}</p>
+        <p>Интерфейс ssd M.2: {{ product.m2 }}</p>
+        <p>Количество ssd M.2: {{ product.total_m2 }}</p>
+        <p>Интерфейс SATA 3.0: {{ product.sata_3 }}</p>
+        <p>Количество SATA 3.0: {{ product.total_sata_3 }}</p>
+        <p>RAID: {{ product.raid }}</p>
+        <p>Слот для модуля Wi-Fi: {{ product.slot_wifi }}</p>
+        <p>Wi-Fi: {{ product.wifi }}</p>
+        <p>Bluetooth: {{ product.bluetooth }}</p>
+        <p>Ethernet: {{ product.ethernet }}</p>
+        <p>Поддержка встроенной графики: {{ product.integrated_graphics_support }}</p>
+        <p>Поддержка SLi/CrossFire: {{ product.sli_crossfire_support }}</p>
+        <p>Встроенный звук: {{ product.built_in_sound }}</p>
+        <p>Звуковая схема: {{ product.sound_scheme }}</p>
+    <br>
+        <p>USB 2.0: {{ product.usb_2 }}</p>
+        <p>Количество USB 2.0: {{ product.total_usb_2 }}</p>
+        <p>USB 3.2 Gen1 Type-A (5 Гбит/с): {{ product.usb_3_gen1_type_a_5gbit }}</p>
+        <p>Всего USB 3.2 Gen1 Type-A (5 Гбит/с): {{ product.total_usb_3_gen1_type_a_5gbit }}</p>
+        <p>USB 3.2 Gen2 Type-A (10 Гбит/с): {{ product.usb_3_gen2_type_a_10gbit }}</p>
+        <p>Всего USB 3.2 Gen2 Type-A (10 Гбит/с): {{ product.total_usb_3_gen2_type_a_10gbit }}</p>
+        <p>USB 3.2 Gen1 Type-C (5 Гбит/с): {{ product.usb_3_gen1_type_c_5gbit }}</p>
+        <p>Всего USB 3.2 Gen1 Type-C (5 Гбит/с): {{ product.total_usb_3_gen1_type_c_5gbit }}</p>
+        <p>USB 3.2 Gen2 Type-C (10 Гбит/с): {{ product.usb_3_gen2_type_c_10gbit }}</p>
+        <p>Всего USB 3.2 Gen2 Type-C (10 Гбит/с): {{ product.total_usb_3_gen2_type_c_10gbit }}</p>
+        <p>USB-C (Thunderbolt 3): {{ product.usb_c_thunderbolt3 }}</p>
+    <br>
+        <p>Цифровой выход S/PDIF: {{ product.s_pdif_digital_output }}</p>
+        <p>Аудио (3.5 мм jack): {{ product.audio_jack }}</p>
+        <p>Всего аудио (3.5 мм jack): {{ product.total_audio_jack }}</p>
+        <p>COM: {{ product.com }}</p>
+        <p>LPT: {{ product.lpt }}</p>
+        <p>PS/2: {{ product.ps_2 }}</p>
+        <p>Всего PS/2: {{ product.total_ps_2 }}</p>
+        <p>DisplayPort: {{ product.display_port }}</p>
+        <p>mini DisplayPort: {{ product.mini_display_port }}</p>
+        <p>VGA (D-Sub): {{ product.vga }}</p>
+        <p>DVI: {{ product.dvi }}</p>
+        <p>HDMI: {{ product.hdmi }}</p>
+        <p>Всего HDMI: {{ product.total_hdmi }}</p>
+    <br>
+        <p>Разъемы для вентилятора ЦП: {{ product.cpu_fan_connectors }}</p>
+        <p>Всего разъемов для вентилятора ЦП: {{ product.total_cpu_fan_connectors }}</p>
+        <p>Разъемы для СВО процессора: {{ product.sockets_for_cbo_processor }}</p>
+        <p>Всего разъемов для СВО процессора: {{ product.total_sockets_for_cbo_processor }}</p>
+        <p>Разъемы для корпусных вентиляторов: {{ product.case_fan_connectors }}</p>
+        <p>Всего разъемов для корпусных вентиляторов: {{ product.total_case_fan_connectors }}</p>
+        <p>Разъемы для подсветки ARGB 5В: {{ product.enable_5v_argb_lighting_connectors }}</p>
+        <p>Всего разъемов для подсветки ARGB 5В: {{ product.total_5v_argb_lighting_connectors }}</p>
+        <p>Разъемы для подсветки RGB 12В: {{ product.enable_12v_lighting_connectors }}</p>
+        <p>Всего разъемов для подсветки RGB 12В: {{ product.total_12v_lighting_connectors }}</p>
+        <p>Длина: {{ product.length }}</p>
+        <p>Ширина: {{ product.width }}</p>
+</main>

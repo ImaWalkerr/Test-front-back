@@ -1,0 +1,56 @@
+//<Шрифт по умолчанию>
+$primary-color: #000;
+$fontSize: 16px;
+//</Шрифт по умолчанию>
+
+//<Переменные>
+$minWidth: 320px;
+$maxWidth: 1470px;
+$maxWidthContainer: 1300;
+$md1: $maxWidthContainer + px;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainTextFamily: Helvetica, cursive;
+$colorLight: #fcf8f3;
+$mainColor: #3a3a3a;
+$orangeColor: #e89f71;
+$grayColor: #898989;
+$darkCrayColor: #616161;
+//</Переменные>
+
+//<Обнуление, общие параметры>
+@import "null";
+body {
+  color: $mainColor;
+  &._lock {
+    overflow: hidden;
+  }
+}
+//</Обнуление, общие параметры>
+
+//<Оболочка>
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+  }
+}
+.base-page {
+  flex: 1 1 auto;
+  @media (max-width: $md2+px) {
+  }
+}
+//</Оболочка>
+
+//<Контейнеры>
+._container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+//</Контейнеры>

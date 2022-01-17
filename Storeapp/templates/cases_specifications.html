@@ -1,0 +1,53 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Блок питания: {{ product.power_supply }}</p>
+        <p>Тип корпуса: {{ product.type_of_case }}</p>
+        <p>Игровой корпус: {{ product.game_case }}</p>
+        <p>Цвет корпуса: {{ product.case_color }}</p>
+        <p>Материал корпуса: {{ product.case_material }}</p>
+        <p>Прозрачное окно: {{ product.transparent_window }}</p>
+        <p>Макс.размер материнской платы: {{ product.max_motherboard_size }}</p>
+        <p>Совместимые материнские платы: {{ product.compatible_motherboard }}</p>
+    <br>
+        <p>Расположение блока питания: {{ product.power_supply_loc }}</p>
+        <p>Вентиляторы в комплекте: {{ product.fans_included }}</p>
+        <p>Поддержка жидкостного охлаждения: {{ product.liquid_cooling_support }}</p>
+        <p>Количество мест для вентиляторов: {{ product.number_of_places_for_fans }}</p>
+        <p>Установленные кулеры: {{ product.installed_coolers }}</p>
+        <p>Шумоизоляция: {{ product.noise_isolation }}</p>
+    <br>
+        <p>Отсеки 5.25 дюймов: {{ product.bays_5_inches }}</p>
+        <p>Внешние отсеки 3.5 дюймов: {{ product.external_bays_inches}}</p>
+        <p>Внутренние отсеки 3.5 дюймов: {{ product.internal_bays_inches }}</p>
+        <p>Отсеки 2.5 дюймов: {{ product.bays_2_inches }}</p>
+        <p>Съёмная корзина жестких дисков: {{ product.remove_hard_drive_cage }}</p>
+        <p>Безвинтовое крепление дисков: {{ product.screwless_drive_mounting }}</p>
+        <p>Слоты расширения: {{ product.expansion_slots }}</p>
+        <p>Пылевые фильтры: {{ product.dust_filters }}</p>
+        <p>Подсветка корпуса: {{ product.backlight_housing }}</p>
+        <p>Контроллер подсветки: {{ product.backlight_controller }}</p>
+        <p>Контроллер вращения вентиляторов: {{ product.fan_rotation_controller }}</p>
+    <br>
+        <p>Макс.длина видеокарты: {{ product.max_video_card_length }}</p>
+        <p>Макс.высота процессорного кулера: {{ product.max_cpu_cooler_height }}</p>
+        <p>Макс. длина блока питания: {{ product.max_power_supply_length }}</p>
+        <p>Крепление VESA: {{ product.vesa }}</p>
+        <p>Дверца: {{ product.door }}</p>
+        <p>Замок: {{ product.lock }}</p>
+        <p>Информационный дисплей: {{ product.info_display }}</p>
+        <p>USB 2.0: {{ product.usb_2 }}</p>
+        <p>USB 3.2 Gen1 Type-A (5 Гбит/с): {{ product.usb_3_gen1_type_a_5gbit }}</p>
+        <p>USB 3.2 Gen1 Type-C (5 Гбит/с): {{ product.usb_3_gen1_type_c_5gbit }}</p>
+        <p>FireWire (IEEE 1394, iLink): {{ product.firewire }}</p>
+        <p>eSATA: {{ product.esata }}</p>
+        <p>Док-станция для винчестеров: {{ product.hard_drive_docking_station }}</p>
+        <p>Кардридер: {{ product.cardreader }}</p>
+        <p>Аудио выход: {{ product.audio_output }}</p>
+        <p>Вход для микрофона: {{ product.micro_output  }}</p>
+    <br>
+        <p>Высота: {{ product.height }}</p>
+        <p>Ширина: {{ product.width }}</p>
+        <p>Глубина: {{ product.depth }}</p>
+        <p>Вес: {{ product.weight }}</p>
+</main>
+

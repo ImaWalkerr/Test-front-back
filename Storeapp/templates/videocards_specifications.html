@@ -1,0 +1,38 @@
+<main class="base-page">  <!--{% if not wide %} style="height:1000px;" {% endif %}-->
+    <p>{{ product.title }}</p>
+        <p>Дата выхода на рынок: {{ product.market_launch_date }}</p>
+        <p>Интерфейс: {{ product.interface }}</p>
+        <p>Производитель графического процессора: {{ product.gpu_manufacturer }}</p>
+        <p>Графический процессор: {{ product.gpu }}</p>
+        <p>Разогнанная версия: {{ product.overclocked_version }}</p>
+        <p>Защита от майнинга (LHR): {{ product.lhr }}</p>
+        <p>Базовая частота графического процессора: {{ product.base_gpu_frequency }}</p>
+        <p>Максимальная частота графического процессора: {{ product.max_gpu_frequency }}</p>
+        <p>Количество потоковых процессоров: {{ product.number_of_stream_processors }}</p>
+    <br>
+        <p>Видеопамять: {{ product.video_memory }}</p>
+        <p>Тип видеопамяти: {{ product.type_video_memory }}</p>
+        <p>Эффективная частота памяти: {{ product.effective_memory_frequency }}</p>
+        <p>Пропускная способность памяти: {{ product.memory_bandwidth }}</p>
+        <p>Ширина шины памяти: {{ product.memory_bus_width }}</p>
+        <p>Поддержка DirectX: {{ product.directx_support }}</p>
+        <p>Поддержка SLI/CrossFire: {{ product.sli_crossfire_support }}</p>
+        <p>Разъемы питания: {{ product.power_connectors}}</p>
+        <p>Рекомендуемый блок питания: {{ product.recommended_power_supply }}</p>
+    <br>
+        <p>Охлаждение воздушное: {{ product.air_cooling }}</p>
+        <p>Охлаждение жидкостное: {{ product.water_cooling }}</p>
+        <p>Толщина системы охлаждения: {{ product.cooling_system_thickness }}</p>
+        <p>Длина видеокарты: {{ product.card_length }}</p>
+        <p>Высота видеокарты: {{ product.card_height }}</p>
+    <br>
+        <p>VGA: {{ product.vga }}</p>
+        <p>DVI: {{ product.dvi  }}</p>
+        <p>HDMI: {{ product.hdmi }}</p>
+        <p>mini HDMI: {{ product.mini_hdmi }}</p>
+        <p>DisplayPort: {{ product.display_port }}</p>
+        <p>mini DisplayPort: {{ product.mini_display_port }}</p>
+        <p>VESA Stereo: {{ product.vesa_stereo }}</p>
+        <p>USB Type-C: {{ product.usb_type_c }}</p>
+</main>
+
